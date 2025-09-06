@@ -8,7 +8,7 @@ interface LinkButtonProps {
 
 const LinkButton = ({ icon, label }: LinkButtonProps) => {
   return (
-    <div className="min-h-[200px] flex items-center justify-center w-1/6">
+    <div className="min-h-[100px] mx-4 xl:mx-0 flex items-center justify-center w-1/8 selection:bg-slate-300/30 selection:text-slate-900">
       <Button icon={icon} label={label} />
     </div>
   );
@@ -20,7 +20,7 @@ const Button = ({ icon, label }: { icon: IconDefinition; label: string }) => {
         className={`
             px-4 py-2 rounded-lg
             flex items-center gap-3
-            min-w-[120px] h-[48px]
+            max-w-3xl
             text-white
             shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)]
             
@@ -31,7 +31,7 @@ const Button = ({ icon, label }: { icon: IconDefinition; label: string }) => {
         `}
     >
         <FontAwesomeIcon className='w-8 h-8' icon={icon} />
-        <span className='text-3xl font-medium'>{label}</span>
+        <span className='font-medium'>{label}</span>
     </button>
   );
 };

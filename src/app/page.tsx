@@ -9,7 +9,11 @@ import { faMedium, faXTwitter, faDiscord } from '@fortawesome/free-brands-svg-ic
 export default function Home() {
   return (
     <div className="relative h-[100dvh] w-screen overflow-hidden bg-black/95">
-        <BackgroundVideo controls={false} src={coolvid}>
+        <BackgroundVideo 
+          controls={false} 
+          src={coolvid}
+          className="responsive-bg-video"
+          >
           <div className='absolute inset-0 flex flex-col'>
             <div className='flex-1'>
               <div className='flex-none'>
@@ -19,18 +23,18 @@ export default function Home() {
                     <Image 
                     alt="zero logo" 
                     src={zerologomain} 
-                    className='w-auto h-auto max-w-full'
+                    className='w-auto h-auto max-w-full selection:bg-slate-300/30'
                     priority
                     />
                   </div>
 
-                  <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white'>
+                  <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white selection:bg-slate-300/30 selection:text-slate-900'>
                     Frictionless and Stable Microtransactions
                   </h1>
                 </div>
               </div>
               <div className='flex-[2] text-white'>
-                <div className='flex items-center justify-center w-full'>
+                <div className='flex flex-col mt-12 lg:flex-row items-center justify-center w-full'>
                   <LinkButton icon={faXTwitter} label="X" />
                   <LinkButton icon={faMedium} label="Medium" />
                   <LinkButton icon={faDiscord} label="Discord" />

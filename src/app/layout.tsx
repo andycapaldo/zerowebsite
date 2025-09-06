@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className='bg-stone-300' lang="en">
+    <html className='bg-neutral-600' lang="en">
       <body
         className={`${futuraTwoMedium.variable} antialiased`}
       >

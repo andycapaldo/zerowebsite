@@ -4,6 +4,14 @@ body {
     font-family: var(--font-futura-pt-medium), sans-serif;
 }
 
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    padding-top: env(safe-area-inset-top) !important;
+    padding-bottom: env(safe-area-inset-bottom) !important;
+}
+
 .next-video-container {
     aspect-ratio: unset !important;
     height: 100vh !important;

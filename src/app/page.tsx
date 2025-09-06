@@ -8,7 +8,7 @@ import { faMedium, faXTwitter, faDiscord } from '@fortawesome/free-brands-svg-ic
 
 export default function Home() {
   return (
-    <div className="relative h-[100dvh] w-screen overflow-hidden bg-black/95">
+    <div className="relative min-h-[100dvh] h-screen w-screen overflow-hidden bg-black/95">
         <BackgroundVideo 
           controls={false} 
           src={coolvid}

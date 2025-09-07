@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import zerologomain from '../../public/zerologomain.png';
 import BackgroundVideo from 'next-video/background-video';
@@ -7,8 +8,9 @@ import { faMedium, faXTwitter, faDiscord } from '@fortawesome/free-brands-svg-ic
 
 
 export default function Home() {
+
   return (
-    <div className="relative min-h-[100dvh] h-screen w-screen overflow-hidden bg-black/95">
+    <div className="relative min-h-[100dvh] h-screen w-screen overflow-hidden bg-black/95 selection:bg-slate-300/30 selection:text-slate-900">
         <BackgroundVideo 
           controls={false} 
           src={coolvid}
@@ -23,12 +25,12 @@ export default function Home() {
                     <Image 
                     alt="zero logo" 
                     src={zerologomain} 
-                    className='w-auto h-auto max-w-full selection:bg-slate-300/30'
+                    className='w-auto h-auto max-w-full'
                     priority
                     />
                   </div>
 
-                  <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white selection:bg-slate-300/30 selection:text-slate-900'>
+                  <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white'>
                     Frictionless and Stable Microtransactions
                   </h1>
                 </div>

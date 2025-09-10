@@ -12,7 +12,7 @@ import { motion, stagger } from "motion/react"
 export default function Home() {
   
   return (
-    <div className="relative min-h-[100dvh] h-screen w-screen overflow-hidden bg-black/95 selection:bg-slate-300/30 selection:text-slate-900 text-white" >
+    <div className="relative min-h-[100dvh] w-screen overflow-auto bg-black/95 selection:bg-slate-300/30 selection:text-slate-900 text-white hide-scrollbar" >
         <BackgroundVideo 
           controls={false} 
           src={coolvid}
@@ -59,7 +59,7 @@ export default function Home() {
                     <LinkButton icon={faDiscord} label="Discord" />
                 </motion.div>
               </div>
-              <div className='flex-[3] h-screen'>
+              <div className='flex-[3]'>
                 <motion.div 
                   className='flex flex-col justify-center items-center mt-36'
                   initial={{ y: -50, opacity: 0 }}

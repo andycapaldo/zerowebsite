@@ -6,7 +6,7 @@ import BackgroundVideo from 'next-video/background-video';
 import coolvid from '/videos/3051492-hd_1920_1080_25fps.mp4'
 import LinkButton from './components/LinkButton';
 import { faMedium, faXTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { motion, stagger } from "motion/react"
+import { motion } from "motion/react"
 
 
 export default function Home() {
@@ -17,10 +17,10 @@ export default function Home() {
           controls={false} 
           src={coolvid}
           className="responsive-bg-video"
-          >
-          <div className='absolute inset-0 flex flex-col'>
+          />
+          <div className='relative z-10 flex flex-col min-h-[100dvh]'>
             <div className='flex-1'>
-              <div className='flex-none'>
+              <div className='flex-none pt-8 md:pt-12 lg:pt-16 px-4'>
                 <div className='max-w-6xl mx-auto text-center space-y-8'>
 
                   <motion.div 
@@ -80,7 +80,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </BackgroundVideo>
     </div>
   );
 }

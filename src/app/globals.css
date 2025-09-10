@@ -12,6 +12,10 @@ html, body {
     padding-bottom: env(safe-area-inset-bottom) !important;
 }
 
+.responsive-bg-video {
+    position: fixed !important;
+}
+
 .next-video-container {
     aspect-ratio: unset !important;
     height: 100vh !important;

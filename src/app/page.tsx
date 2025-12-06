@@ -12,7 +12,7 @@ import { motion } from "motion/react"
 export default function Home() {
   
   return (
-    <div className="relative min-h-[100dvh] w-screen overflow-auto bg-black/95 selection:bg-slate-300/30 selection:text-slate-900 text-white hide-scrollbar" >
+    <div className="relative min-h-[100dvh] w-screen overflow-auto bg-black/95 selection:bg-slate-300/30 selection:text-slate-900 text-white" >
         <BackgroundVideo 
           controls={false} 
           src={coolvid}
